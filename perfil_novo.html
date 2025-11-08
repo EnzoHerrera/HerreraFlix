@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herrera Flix</title>
+    <link rel="shortcut icon" href="/Assests/Imagens/default/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/Assests/styles/form.css">
+</head>
+
+<body>
+    <a href="/perfis.html"><img src="/Assests/Imagens/default/flecha_amarela.png" alt="voltar" width="50px"></a>
+    <div class="maior">
+        <h1>Novo Perfil</h1>
+        <div class="principal">
+            <main>
+                <form action="cadastrar-perfil" method="post">
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome" required placeholder="digite seu nome">
+                    <label for="cpf">CPF: </label>
+                    <input type="text" name="cpf" id="cpf" pattern="[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}"
+                        placeholder="digite seu CPF">
+                    <label for="idade">Idade: </label>
+                    <input type="number" name="idade" id="idade" required placeholder="digite sua idade">
+                    <label for="dt_nascimento">Data de Nascimento: </label>
+                    <input type="date" name="dt_nascimento" id="dt_nascimento" required>
+                    <label for="telefone">Telefone: </label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="digite seu telefone" required
+                        pattern="^(\(?\d{2}\)?\s?)?\d{4,5}-?\d{4}$">
+                    <label for="genero">Gênero: </label>
+                    <select name="genero" id="genero">
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">feminino</option>
+                    </select>
+                    <label for="senha">Senha: </label>
+                    <input type="password" name="senha" id="senha" placeholder="digite sua senha" required>
+                    <label for="privacidade">Privacidade: </label>
+
+                    <div class="privacidade">
+                        <div>
+                            <input type="radio" id="publico" name="visibilidade" value="public" required>
+                            <label for="publico">Público</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="privado" name="visibilidade" value="private" required>
+                            <label for="privado">Privado</label>
+                        </div>
+                    </div>
+                    <div class="botoes">
+                        <button type="reset" id="limpar">Limpar</button>
+                        <button type="submit" id="salvar">Salvar</button>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

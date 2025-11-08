@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #333333, #000000);
+    height: 775px;
+    color: #D4AF37;
+}
+.maior {
+    margin-top: -50px;
+}
+.principal {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 30%;
+    border: 3px solid #D4AF37;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #1A1A1A;
+    height: 600px;
+    box-shadow: 1px 1px 10px #D4AF37;
+}
+
+form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form label {
+    margin-bottom: 15px;
+}
+
+form input,
+select {
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #D4AF37;
+    width: 50%;
+    outline: none;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background: none;
+    color: #ffff;
+}
+
+form input::placeholder {
+    color: #fff;
+}
+
+h1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.botoes {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.botoes button {
+    width: 75px;
+}
+button {
+    border-radius: 4px;
+    width: 50px;
+    padding: 10px 5px;
+}
+
+button#limpar {
+    background-color: #1A1A1A;
+    border: 2px solid #D4AF37;
+    color: #D4AF37;
+    padding: 1px;
+}
+
+button#salvar {
+    background-color: #D4AF37;
+    border: none;
+}
+
+.privacidade {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.privacidade div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+}
