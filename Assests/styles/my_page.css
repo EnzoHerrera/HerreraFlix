@@ -224,6 +224,7 @@ main {
     margin: 20px;
     border-radius: 15px;
     height: 1100px;
+    border: 1.5px solid white;
 }
 
 #portifolio {
@@ -260,4 +261,9 @@ main {
 .imgs {
     text-align: center;
     padding: 20px;
+}
+
+#curiosidades {
+    display: flex;
+    justify-content: space-around;
 }
