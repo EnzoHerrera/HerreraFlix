@@ -70,7 +70,7 @@ nav {
 
 .section-img {
     height: 450px;
-    background: url('../Assests/Imagens/default/codigo.jpg');
+    background-image: url('../Imagens/default/codigo.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
